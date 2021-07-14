@@ -1,10 +1,13 @@
+import React from "react";
+import { GlobalState } from "./GlobalState";
+import TopSection from "./TopSection"
 
-
-
-function App() {
+const App = () => {
   return (
-   <></>
+    <GlobalState>
+      <TopSection />
+    </GlobalState>
   );
-}
+};
 
 export default App;

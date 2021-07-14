@@ -1,0 +1,87 @@
+/* 
+Global Styles
+ */
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*
+Global Styles 
+*****/
+
+/* 
+Header Styles 
+*/
+
+.header-section .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+.header-section .navigation .left-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+}
+
+.header-section .navigation .left-nav a {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-section .navigation .left-nav .left-nav__links:not(:last-child) {
+    margin-right: 2em;
+  }
+
+.header-section .navigation .logo {
+  width: 8%;
+}
+
+.header-section .navigation .right-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+
+.header-section .navigation .right-nav a {
+  font-weight: 600;
+}
+
+.header-section .navigation .right-nav .right-nav__links:not(:first-child) {
+    margin-left: 2em;
+  }
+
+.header-section .navigation .right-nav__links .menu-bar {
+  height: 0.2em;
+  width: 30px;
+  background-color: #000000;
+}
+
+.header-section .navigation .right-nav__links .menu-bar:not(:last-child) {
+  margin-bottom: .4em;
+}
+
+/* 
+Header Styles
+ *****/
