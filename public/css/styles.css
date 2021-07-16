@@ -30,6 +30,10 @@ Global Styles
 Header Styles 
 */
 
+.header-section {
+  background-color: #f9f9f9;
+}
+
 .header-section .navigation {
   display: flex;
   justify-content: space-between;
@@ -50,8 +54,8 @@ Header Styles
 }
 
 .header-section .navigation .left-nav .left-nav__links:not(:last-child) {
-    margin-right: 2em;
-  }
+  margin-right: 2em;
+}
 
 .header-section .navigation .logo {
   width: 8%;
@@ -69,8 +73,12 @@ Header Styles
 }
 
 .header-section .navigation .right-nav .right-nav__links:not(:first-child) {
-    margin-left: 2em;
-  }
+  margin-left: 2em;
+}
+
+.header-section .navigation .right-nav .right-nav__links--hamburger-menu {
+  cursor: pointer;
+}
 
 .header-section .navigation .right-nav__links .menu-bar {
   height: 0.2em;
@@ -79,9 +87,125 @@ Header Styles
 }
 
 .header-section .navigation .right-nav__links .menu-bar:not(:last-child) {
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 
 /* 
 Header Styles
+ *****/
+
+/* 
+Jumbo Section Styles
+ *****/
+
+.jumbo-section {
+  height: 95vh;
+  background: url("../img/Jumbo-img.png") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-color: #f9f9f9;
+}
+
+.jumbo-section .jumbo-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95vh;
+}
+
+.jumbo-section-content .left-text {
+  display: flex;
+  flex-direction: column;
+  width: 34%;
+  vertical-align: middle;
+}
+
+.left-text .left-text__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-text .left-text__title .left-text__title__small {
+  color: #ff0193;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8em;
+}
+
+.left-text .left-text__title .left-text__title__big {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.7em;
+}
+
+.left-text .left-text__paragraph {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.2em;
+  line-height: 29px;
+}
+
+.left-text .left-text__button {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 32px;
+  padding: 0.9em 2em;
+  width: 50%;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.jumbo-section-content .right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /* height: inherit; */
+  width: 40%;
+}
+
+.jumbo-section-content .right-text {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+
+.jumbo-section-content .right-text__content {
+  /* transform: rotate(110deg);
+  transform-origin: 0 0;
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  -o-transform: rotate(110deg); */
+}
+
+.right-text .right-text__content.right-text__first {
+  font-size: 3.625rem;
+}
+
+.right-text .right-text__content.right-text__second {
+  font-size: 9.77625rem;
+}
+
+.right-text .right-text__content.right-text__third {
+  font-size: 3.625rem;
+}
+
+/* 
+Jumbo Section  Styles
  *****/
